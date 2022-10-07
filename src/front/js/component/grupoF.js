@@ -4,22 +4,22 @@ import "../../styles/grupos.css";
 
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
-const initialTasks = [
+const initialTasksGF = [
   {
     id: "1",
-    text: "Bélgica",
+    team: "Bélgica",
   },
   {
     id: "2",
-    text: "Canadá",
+    team: "Canadá",
   },
   {
     id: "3",
-    text: "Marruecos",
+    team: "Marruecos",
   },
   {
     id: "4",
-    text: "Croacia",
+    team: "Croacia",
   },
 ];
 
@@ -32,7 +32,7 @@ const reorder = (list, startIndex, endIndex) => {
 };
 
 function GrupoF() {
-  const [tasks, setTasks] = useState(initialTasks);
+  const [tasksGF, setTasksGF] = useState(initialTasksGF);
   return (
     <DragDropContext
       onDragEnd={(result) => {
@@ -47,7 +47,7 @@ function GrupoF() {
           return;
         }
 
-        setTasks((prevTasks) =>
+        setTasksGF((prevTasks) =>
           reorder(prevTasks, source.index, destination.index)
         );
       }}
@@ -62,7 +62,7 @@ function GrupoF() {
             <li className="posicion">4</li>
         </ul>
         </div>
-        <Droppable droppableId="tasks">
+        <Droppable droppableId="tasksGF">
           {(droppableProvided) => (
             <div className="posiciones2">
             <ul
@@ -70,8 +70,8 @@ function GrupoF() {
               ref={droppableProvided.innerRef}
               
             >
-              {tasks.map((task, index) => (
-                <Draggable key={task.id} draggableId={task.id} index={index}>
+              {tasksGF.map((taskGF, index) => (
+                <Draggable key={taskGF.id} draggableId={taskGF.id} index={index}>
                   {(draggableProvided) => (
                     <li
                       {...draggableProvided.draggableProps}
@@ -79,7 +79,7 @@ function GrupoF() {
                       {...draggableProvided.dragHandleProps}
                       className="task-item Equipo"
                     >
-                      {task.text}
+                      {taskGF.team}
                     </li>
                   )}
                 </Draggable>
