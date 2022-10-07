@@ -1,60 +1,57 @@
-.grupos{
-    background-color: rgb(207, 207, 207);
-    width: 300px;
-    margin-left: 10%;
-    height: 190px;
-   
+.grupos {
+  background-color: rgb(207, 207, 207);
+  width: 300px;
+  margin-left: 10%;
+  height: 190px;
 }
-.Primero{
-    display: inline;
-    float: left;
-    width: 100%;
-    cursor: pointer;
-}
-.Segundo{
-    display: inline;
-    float: left;
-    width: 100%;
-    cursor: pointer;
-}
-.Tercero{
-    display: inline;
-    float: left;
-    width: 100%;
-    cursor: pointer;
-}
-.Cuarto{
-    display: inline;
-    float: left;
-    width: 100%;
-    cursor: pointer;
-}
-.Letra{
-    background-color: brown;
-    height: 30px;
-    border-width: 2px;
-    border-color: rgb(77, 59, 59);
-    border-style: double;
-    color: white;
+.Primero {
+  display: inline;
+  float: left;
+  width: 100%;
 }
 
-.posicion{
-    width: 20%;
-    height: 40px;
-    text-align: center;
-    border-width: 2px;
-    border-right: none;
-    border-color: rgb(77, 59, 59);
-    border-style: double;
-    padding-top: 4px;
+.Letra {
+  background-color: brown;
+  height: 30px;
+  border-width: 2px;
+  border-color: rgb(77, 59, 59);
+  border-style: double;
+  color: white;
 }
-.Equipo{
-    height: 40px;
-    width: 80%;
-    text-align: center;
-    border-width: 2px;
-    border-color: rgb(77, 59, 59);
-    border-style: double;
-    border-left: none;
-    padding-top: 4px;
+
+.posicion {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  border-width: 2px;
+  border-right: none;
+  border-color: rgb(77, 59, 59);
+  border-style: double;
+  padding-top: 4px;
+}
+.Equipo {
+  height: 40px;
+  width: 80%;
+  text-align: center;
+  border-width: 2px;
+  border-color: rgb(77, 59, 59);
+  border-style: double;
+  padding-top: 4px;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.posiciones {
+  display: block;
+  margin-left: -32px;
+  width: 80px;
+}
+.posiciones2 {
+  margin-top: -176px;
+  padding-left: 13px;
+  width: 364px;
+  display: inline;
+  float: left;
+  
 }

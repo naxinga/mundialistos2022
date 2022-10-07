@@ -7,19 +7,19 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 const initialTasks = [
   {
     id: "1",
-    text: "Francia",
+    text: "Qatar",
   },
   {
     id: "2",
-    text: "Dinamarca",
+    text: "Ecuador",
   },
   {
     id: "3",
-    text: "Túnez",
+    text: "Senegal",
   },
   {
     id: "4",
-    text: "Australia",
+    text: "Países Bajos",
   },
 ];
 
@@ -31,7 +31,7 @@ const reorder = (list, startIndex, endIndex) => {
   return result;
 };
 
-function GrupoD() {
+function GrupoX() {
   const [tasks, setTasks] = useState(initialTasks);
   return (
     <DragDropContext
@@ -53,7 +53,7 @@ function GrupoD() {
       }}
     >
       <div className="grupos">
-        <div className="Letra">GrupoD</div>
+        <div className="Letra">GrupoX</div>
         <div className="posiciones">
         <ul >
             <li className="posicion">1</li>
@@ -94,4 +94,4 @@ function GrupoD() {
   );
 }
 
-export default GrupoD;
+export default GrupoX;
