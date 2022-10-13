@@ -1,0 +1,9 @@
+.user{
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    background-color: transparent !important;
+    display:flex;
+    justify-content: right;
+}

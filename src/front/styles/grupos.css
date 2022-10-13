@@ -1,5 +1,5 @@
 .grupos {
-  background-color: rgb(207, 207, 207);
+  
   width: 300px;
   margin-left: 10%;
   height: 190px;
@@ -28,6 +28,7 @@
   border-color: rgb(77, 59, 59);
   border-style: double;
   padding-top: 4px;
+  background-color: rgb(207, 207, 207);
 }
 .Equipo {
   height: 40px;
@@ -38,6 +39,7 @@
   border-style: double;
   padding-top: 4px;
   color: black;
+  background-color: rgb(207, 207, 207);
 }
 ul {
   list-style: none;

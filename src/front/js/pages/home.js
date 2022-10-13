@@ -9,7 +9,7 @@ import GrupoE from "../component/grupoE";
 import GrupoF from "../component/grupoF";
 import GrupoG from "../component/grupoG";
 import GrupoH from "../component/grupoH";
-import GrupoX from "../component/grupoX";
+
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);

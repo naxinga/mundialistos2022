@@ -53,7 +53,7 @@ function GrupoE() {
       }}
     >
       <div className="grupos">
-        <div className="Letra">GrupoE</div>
+        <div className="Letra">Grupo E</div>
         <div className="posiciones">
         <ul >
             <li className="posicion">1</li>
