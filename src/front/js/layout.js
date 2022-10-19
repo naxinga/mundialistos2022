@@ -7,7 +7,7 @@ import { Demo } from "./pages/demo";
 import { Private } from "./pages/private";
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
-
+import { Altas } from "./pages/altas";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
@@ -26,6 +26,7 @@ const Layout = () => {
                         <Route element={<Home />} path="/" />
                         <Route element={<Private />} path="/private" />
                         <Route element={<Single />} path="/single/:theid" />
+                        <Route element={<Altas/>} path="/altas"/>
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />

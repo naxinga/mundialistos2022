@@ -9,39 +9,28 @@ import GrupoE from "../component/grupoE";
 import GrupoF from "../component/grupoF";
 import GrupoG from "../component/grupoG";
 import GrupoH from "../component/grupoH";
+import LoginForm from "../component/login";
 
 export const Private = () => {
   const { store, actions } = useContext(Context);
 
-  return (
-    <form className="formulario">
-      <label className="labform1">Email</label>
-      <input placeholder="Introduce el email"></input>
-      <label className="labform">Nickname</label>
-      <input placeholder="Introduce el nickname"></input>
-      <label className="labform">Password</label>
-      <input className="inlab" type="password" placeholder="Introduce la contraseña"></input>
+  return (<>
+    {localStorage.getItem("jwt-token") == null ? <LoginForm/> : 
+    (<div className="text-center mt-5">
+    <h1>Mundialistos Qatar 2022</h1>
+    <div className="FaseGrupos">
 
-      <button className="btnSubmit">
-        Submit
-      </button>
-
-      <p className="labform1">Si ya estás registrado pusla aquí</p>
-    </form>
-    //<div className="text-center mt-5">
-    //<h1>Mundialistos Qatar 2022</h1>
-    //<div className="FaseGrupos">
-
-    //<GrupoA/>
-    //<GrupoB/>
-    //<GrupoC/>
-    //<GrupoD/>
-    //<GrupoE/>
-    //<GrupoF/>
-    //<GrupoG/>
-    //<GrupoH/>
-
-    //</div>
-    //</div>
+    <GrupoA/>
+    <GrupoB/>
+    <GrupoC/>
+    <GrupoD/>
+    <GrupoE/>
+    <GrupoF/>
+    <GrupoG/>
+    <GrupoH/>
+    <button className="btnSubmit" onClick={() => actions.logout()} >Logout</button>
+    </div>
+    </div>)}
+    </>
   );
 };
